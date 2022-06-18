@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ExpertsFragment.ExpertDetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear12"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_topview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Toolbar
+                android:id="@+id/toolbarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lexenddeca"
+                    android:gravity="center"
+                    android:text="Expert Details"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </Toolbar>
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/linear12">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:id="@+id/expertPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/expertName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Nadim Mahmud"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/lexenddeca"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/flagName"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/flag"/>
+                    <TextView
+                        android:id="@+id/countryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bangladesh"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="1dp"
+                        android:fontFamily="@font/lexenddeca"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="17dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About The Expert"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lexenddeca"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/aboutExpert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lexenddeca"
+                        android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp"
+                        app:cardCornerRadius="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding ="20dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_member_picture"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Member Since:"
+                                    android:textSize="12sp"
+                                    android:layout_marginLeft="12sp"
+                                    android:fontFamily="@font/lexenddeca"/>
+                                <TextView
+                                    android:id="@+id/memberDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10 jun,2020"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/lexenddeca"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/red"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_based_location"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Based On:"
+                                    android:textSize="12sp"
+                                    android:layout_marginLeft="12sp"
+                                    android:fontFamily="@font/lexenddeca"/>
+                                <TextView
+                                    android:id="@+id/locationBased"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NSW"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/red"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_job_completed"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Job Completed:"
+                                    android:textSize="12sp"
+                                    android:layout_marginLeft="12sp"
+                                    android:fontFamily="@font/lexenddeca"/>
+                                <TextView
+                                    android:id="@+id/jobCompleted"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/lexenddeca"
+                                    android:textColor="@color/red"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expert Area"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/lexenddeca"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/expertSkillRecyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"/>
+
+                    <Button
+                        android:id="@+id/contactButton"
+                        android:layout_width="200dp"
+                        android:layout_height="34dp"
+                        android:gravity="center"
+                        android:background="@drawable/ic_main_button"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/lexenddeca"
+                        android:layout_marginBottom="80dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DashboardFragement.ClientDashboard.ClientJobStatusModels.AppliedExpertProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/topview"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Toolbar
+                android:id="@+id/toolbarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lexenddeca"
+                    android:gravity="center"
+                    android:text="Applied Expert Profile"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </Toolbar>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/firstCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:src="@drawable/profile_pic"/>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/expertName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/lexenddeca"
+                                        android:text="Safwan"
+                                        android:textSize="18dp"
+                                        android:textColor="@color/black"/>
+                                    <TextView
+                                        android:id="@+id/locationTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/lexenddeca"
+                                        android:text="Location"
+                                        android:textSize="12dp" />
+                                    <TextView
+                                        android:id="@+id/countryTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/lexenddeca"
+                                        android:text="Country"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/statusLayout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:background="@color/ongoing"
+                                    android:layout_marginTop="10dp">
+                                    <TextView
+                                        android:id="@+id/statusTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="OnGoing"
+                                        android:fontFamily="@font/lexenddeca"
+                                        android:textColor="@color/white"
+                                        android:textSize="9dp"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Proposed Budget:"
+
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/lexenddeca"
+                                    android:textColor="@color/black"/>
+                                <TextView
+                                    android:id="@+id/budgetTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Budget"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:textSize="12dp"
+                                    android:fontFamily="@font/lexenddeca"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/createdTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1 Year Ago"
+                                android:layout_gravity="center"
+                                android:gravity="end"
+                                android:layout_margin="5dp"
+                                android:textSize="12dp"
+                                android:padding="5dp"
+                                android:fontFamily="@font/lexenddeca"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Message: "
+
+                                android:textSize="12dp"
+                                android:fontFamily="@font/lexenddeca"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/messageTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:text=""
+                                android:textSize="12dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/lexenddeca" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp">
+                            <Button
+                                android:id="@+id/hireButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="Hire This Expert"
+                                android:fontFamily="@font/lexenddeca"
+                                android:textSize="10dp"
+                                android:textAllCaps="false"
+                                android:background="@drawable/ic_main_button"
+                                android:textColor="@color/white"/>
+
+                            <Button
+                                android:id="@+id/rejectButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Reject"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/lexenddeca"
+                                android:textSize="10dp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteGrey">#f3f4f7</color>
+
+    <color name="colorPrimary">#10243F</color>
+    <color name="colorPrimaryDark">#10243F</color>
+    <color name="colorAccent">#10243F</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBtn">#2988C9</color>
+    <color name="colorLight">#BCBCBC</color>
+    <color name="colorDark">#383636</color>
+    <color name="colorRed">#D81B60</color>
+    <color name="colorAsh">#645F5F</color>
+    <color name="colorBackLight">#D3D1D1</color>
+    <color name="textColor">#373434</color>
+    <color name="budgetColor">#FB6F6B</color>
+    <color name="daysColor">#772EFF</color>
+    <color name="defaultColor">#8C8C8C</color>
+    <color name="backgroundColor">#10243F</color>
+    <color name="trainningTitleColor">#FB6F6B</color>
+    <color name="expertColor">#ccf6e1</color>
+    <color name="active">#01AA2D</color>
+    <color name="ongoing">#01AA2D</color>
+    <color name="drafted">#BDBDBD</color>
+    <color name="awarded">#45B9F6</color>
+    <color name="submitted">#D87B09</color>
+    <color name="completed">#042C5E</color>
+    <color name="mainColor">#15282E</color>
+
+</resources>

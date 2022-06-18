@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.teleaus.talenttorrentandroid"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 5
+        versionName "1.1.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.wear:wear:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.github.irshulx:laser-native-editor:3.0.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+
+    /// Extra Library
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'org.parceler:parceler-api:1.1.12'
+    annotationProcessor 'org.parceler:parceler:1.1.12'
+
+    /*implementation 'com.github.bumptech.glide:glide:4.9.0'*/
+    implementation 'com.github.irshulx:laser-native-editor:3.0.4'
+   /* annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'*/
+
+
+    implementation 'com.github.bumptech.glide:glide:4.1.1'
+    implementation 'com.android.support:support-v4:29.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+
+    implementation 'org.parceler:parceler-api:1.1.12'
+    annotationProcessor 'org.parceler:parceler:1.1.12'
+
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+
+    // expandable textview
+    implementation 'com.github.gifffert:ExpandableTextView:0.1.6'
+
+    //Volley
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    //Search Spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    implementation "com.paulrybitskyi.persistentsearchview:persistentsearchview:1.1.3"
+    implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.4'
+    implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.2'
+
+    //Stripe
+
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+   /* implementation('com.stripe:stripe-android:5.1.0') {
+        exclude group: 'com.android.support'
+    }*/
+    implementation 'com.stripe:stripe-android:18.0.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    implementation 'com.facebook.android:facebook-login:12.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:12.0.0'
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+    implementation 'com.gdacciaro:iosdialog:1.0.3'
+    implementation 'com.github.xabaras:RecyclerViewSwipeDecorator:1.3'
+
+    ///google-play-update
+    implementation 'com.google.android.play:core:1.7.3'
+    implementation 'eu.dkaratzas:android-inapp-update:1.0.5'
+
+    implementation 'com.github.Mirkoddd:Range-SeekBar:1.0.9'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+}
+

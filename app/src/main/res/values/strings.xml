@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Talent Torrent</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="settings">Notification</string>
+    <string name="browse">Browse</string>-
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+
+    <string name="facebook_app_id">583186702725668</string>
+    <string name="fb_login_protocol_scheme">fb583186702725668</string>
+
+    <!--<string name="facebook_app_id">753095415165093</string>
+    <string name="fb_login_protocol_scheme">fb753095415165093</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="type">
+        <item>Client</item>
+        <item>Expert</item>
+    </string-array>
+</resources>
